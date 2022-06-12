@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>디지털 시계</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    </style>
+
+  </head>
+
+  <body style= "font-family: 'Nanum Gothic', sans-serif;">
+    <h1>디지털 시계</h1>
+    <div id= "today"></div>
+    <div id= "clock"></div>
+    <script src="digitalClock.js"></script>
+  </body>
+
+  <script>
+    function display_image(src, width, height, alt) {
+        var a = document.createElement("img");
+        a.src = src;
+        a.width = width;
+        a.height = height;
+        a.alt = alt;
+        document.body.appendChild(a);
+    }
+    display_image('돌아가는_시계.gif', 
+                     280, 
+                     280, 
+                     'JavaScriptImage');
+    </script>
+</html>
